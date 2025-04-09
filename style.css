@@ -48,7 +48,11 @@ ul {
     background-color: #E0E0E0;
     width: 40px;
     height: 40px;
-    transition: 0.3s;
+    transition: 0.5s;
+  }
+
+  button:hover {
+    transform: scale(1.2);
   }
 
   button:not(:hover) {
@@ -61,6 +65,11 @@ ul {
 
   button:nth-child(2) {
     margin-left: auto;
+  }
+
+  bold,
+  time {
+    z-index: 1;
   }
 
   li {
@@ -88,11 +97,6 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
   }
-}
-
-bold,
-time {
-  z-index: 1;
 }
 
 li::before,
