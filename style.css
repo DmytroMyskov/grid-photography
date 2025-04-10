@@ -14,7 +14,7 @@ main {
   margin: 0 auto;
   padding-block: 0 120px;
 
-  bold {
+  b {
     font-weight: 500;
   }
 
@@ -67,9 +67,14 @@ ul {
     margin-left: auto;
   }
 
-  bold,
+  b,
   time {
     z-index: 1;
+  }
+
+  :hover>b,
+  :hover>time {
+    opacity: 70%;
   }
 
   li {
@@ -82,6 +87,9 @@ ul {
     padding: 20px;
     position: relative;
     overflow: hidden;
+    transition: 0.3s;
+    background-position: center;
+    background-size: 100%;
   }
 
   .heart {
@@ -117,6 +125,10 @@ li::after {
 li:not(:hover)::before,
 li:hover::after {
   opacity: 0;
+}
+
+li:hover {
+  background-size: 115%;
 }
 
 .wide {
